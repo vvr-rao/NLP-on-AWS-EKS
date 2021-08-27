@@ -15,7 +15,18 @@ def do_prediction():
     string1 = string1.replace('[^\w\s]', '') # remove punctuation
     new_data.append(string1)
   my_prediction = clf.predict(data)
-  return (jsonify(str(my_prediction[0])))
+  my_prediction_str = ""
+  if my_prediction[0] == 0:
+    my_prediction_str = "Negative"
+  elif my_prediction[0] == 1:
+    my_prediction_str = "Somewhat Negative"
+  elif my_prediction[0] == 2:
+    my_prediction_str = "Neutral"
+  elif my_prediction[0] == 3:
+    my_prediction_str = "Somewhat Positive"
+  elif my_prediction[0] == 4:
+    my_prediction_str = "Positive"
+  return (jsonify(my_prediction_str))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
