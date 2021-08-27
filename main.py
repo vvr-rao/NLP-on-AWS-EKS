@@ -3,7 +3,7 @@ import joblib
 
 app = Flask(__name__)
 
-@app.route("/predict", methods=['POST'])
+@app.route("/", methods=['POST'])
 def do_prediction():
   json = request.get_json()
   model = open('model/SVM_cv_model.pkl','rb')
