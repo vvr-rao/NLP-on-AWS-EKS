@@ -15,7 +15,7 @@ def do_prediction():
     string1 = string1.replace('[^\w\s]', '') # remove punctuation
     new_data.append(string1)
   my_prediction = clf.predict(data)
-  return jsonify(my_prediction)
+  return (jsonify(str(my_prediction[0])))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
