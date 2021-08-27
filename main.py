@@ -5,10 +5,11 @@ app = Flask(__name__)
 
 @app.route("/", methods=['POST'])
 def do_prediction():
-  json = request.get_json()
+  content = request.json
   model = open('model/SVM_cv_model.pkl','rb')
   clf = joblib.load(model)
-  data = ["plenty of funny quotes but ultimately fell flat"]
+  #data = ["plenty of funny quotes but ultimately fell flat"]
+  data = [content['mytext']]
   new_data = []
   for string in data:
     string1 = string.replace('\d+', '') # remove digits
