@@ -5,10 +5,9 @@ app = Flask(__name__)
 
 @app.route("/", methods=['POST'])
 def do_prediction():
-  content = request.json
+  content = request.get_json()
   model = open('model/SVM_cv_model.pkl','rb')
   clf = joblib.load(model)
-  #data = ["plenty of funny quotes but ultimately fell flat"]
   data = [content['mytext']]
   new_data = []
   for string in data:
