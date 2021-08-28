@@ -16,7 +16,7 @@ The modeliing needs a bit more work. I used a simple BOW model using Linear SVM.
 From there I;
 1) Saved the model in a .pkl, 
 2) Created a Docker container holding the .pkl and a simple flask app to accept incoming text in a JSON and return the Sentiment
-3) Published on AWS EKS. For detail on how to publish a Flask App of EKS, take a look at my ohter repo here: https://github.com/vvr-rao/Flask-on-AWS-EKS
+3) Published on AWS EKS. For detail on how to publish a Flask App of EKS, take a look at my other repo here: https://github.com/vvr-rao/Flask-on-AWS-EKS
 
 Model can be called from Postman by passing a POST message with a JSON body.
 The expected input is of the form {"mytext":"<TEXT FOR WHICH SENTIMENT IS NEEDED>"}
