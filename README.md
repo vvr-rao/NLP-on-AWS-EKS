@@ -1,6 +1,6 @@
 # Training an NLP model and Deploying onto AWS Elastic Kubernetes Service
 
-Trained a model locally and deploying on to Elastic Kubernetes Service on AWS
+Trained a model locally and deployed  to the Elastic Kubernetes Service on AWS
 
 The Notebooks folder has the EDA and Model training. For EDA, I primarily focussed on using the **en_core_web_lg model** of Spacy to extract Named Entities, Adjectives and Verbs. Was looking for any trends
 
