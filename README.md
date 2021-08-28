@@ -13,7 +13,7 @@ The Notebooks folder has the EDA and Model training. For EDA, I primarily focuss
 
 The modeliing needs a bit more work. I used a simple BOW model using Linear SVM. Planning to do more work to tune the model later but wanted a framework in place to host an ML model
 
-From there, I
+From there I;
 1) Saved the model in a .pkl, 
 2) Created a Docker container holding the .pkl and a simple flask app to accept incoming text in a JSON and return the Sentiment
 3) Published on AWS EKS. For detail on how to publish a Flask App of EKS, take a look at my ohter repo here: https://github.com/vvr-rao/Flask-on-AWS-EKS
