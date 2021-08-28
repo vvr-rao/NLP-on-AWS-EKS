@@ -9,7 +9,7 @@ This is a Sentiment Dataset for Movie reviews. Five Sentiment Labels as follows:
 4 - positive
 
 The Notebooks folder has the EDA and Model training. For EDA, I primarily focussed on using the **en_core_web_lg model** of Spacy to extract Named Entities, Adjectives and Verbs. Was looking for any trends
-![Persons by Sentiment](https://github.com/vvr-rao/NLP-on-AWS-EKS/Notebooks/Persons.png?raw=true)
+![Persons by Sentiment](https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/Persons.png?raw=true)
 
 The modeliing needs a bit more work. I used a simple BOW model using Linear SVM. Planning to do more work to tune the model later but wanted a framework in place to host an ML model
 
