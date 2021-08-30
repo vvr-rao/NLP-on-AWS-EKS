@@ -16,10 +16,10 @@ The modeling needs a bit more work. I used a simple BOW model using Linear SVM. 
 One approach I was exploring was to create Word2Vec vectors and training a model using that. Unfortunately, the corpus might not be lare enough for sufficient W2V training (I could always download a pretained one from Google, Stanford etc.)
 ![Word2Vec](https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/W2V.png?raw=true)
 
-From there I;
-1) Saved the model in a .pkl, 
-2) Created a Docker container holding the .pkl and a simple flask app to accept incoming text in a JSON and return the Sentiment
-3) Published on AWS EKS. For detail on how to publish a Flask App of EKS, take a look at my other repo here: https://github.com/vvr-rao/Flask-on-AWS-EKS
+In any case, with the trained model, the steps to deploy are as follows;
+1) Save the model in a .pkl, 
+2) Create a Docker container holding the .pkl and a simple flask app to accept incoming text in a JSON and return the Sentiment
+3) Publish on AWS EKS. For detail on how to publish a Flask App of EKS, take a look at my other repo here: https://github.com/vvr-rao/Flask-on-AWS-EKS
 
 Model can be called from Postman by passing a POST message with a JSON body.
 The expected input is of the form {"mytext":"<TEXT FOR WHICH SENTIMENT IS NEEDED>"}
