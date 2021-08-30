@@ -13,7 +13,7 @@ The Notebooks folder has the EDA and Model training. For EDA, I primarily focuss
 
 The modeling needs a bit more work(ref: NLPonEKS-ModelTraining.ipynb). I used a simple BOW model using Linear SVM. Planning to do more work to tune the model later but wanted a framework in place to host an ML model
 
-One approach I am exploring to improve the model is to create Word2Vec vectors and training a model using that (ref: NLPonEKS-EDA-Word2Vec.ipynb). Unfortunately, the corpus might not be large enough for sufficient W2V training and my accuracy is proving to be lower than a simple BOW with CountVectorization and SVM (I could always download a pretained one from Google, Stanford etc.). Below is the 2D representation of my trained Word2Vec model using the corpus:
+One approach I am exploring to improve the model is to create Word2Vec vectors and training a model using that (ref: NLPonEKS-EDA-Word2Vec.ipynb). Unfortunately, the dataset might not be large enough for sufficient W2V training and my accuracy is proving to be lower than a simple BOW with CountVectorization and SVM (I could always download a pretained one from Google, Stanford etc.). Below is the 2D representation of my trained Word2Vec model using the data provided. (I tried a few options and this was the best):
 ![Word2Vec](https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/W2V.png?raw=true)
 
 In any case, with the trained model, the steps to deploy are as follows;
