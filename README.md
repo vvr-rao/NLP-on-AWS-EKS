@@ -13,7 +13,7 @@ The Notebooks folder has the EDA and Model training. For EDA, I primarily focuss
 
 The modeling needs a bit more work. I used a simple BOW model using Linear SVM. Planning to do more work to tune the model later but wanted a framework in place to host an ML model
 
-One approach I am exploring is to create Word2Vec vectors and training a model using that. Unfortunately, the corpus might not be large enough for sufficient W2V training (I could always download a pretained one from Google, Stanford etc.)
+One approach I am exploring to improve the model is to create Word2Vec vectors and training a model using that. Unfortunately, the corpus might not be large enough for sufficient W2V training (I could always download a pretained one from Google, Stanford etc.)
 ![Word2Vec](https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/W2V.png?raw=true)
 
 In any case, with the trained model, the steps to deploy are as follows;
