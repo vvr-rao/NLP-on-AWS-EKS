@@ -1,6 +1,6 @@
 # Training an NLP model and Deploying onto AWS Elastic Kubernetes Service
 
-A more detaild writeup is available on my blog here: https://vvrrao.home.blog/hosting-a-custom-nlp-model-on-aws-elastic-kubernetes-service/
+A more detailed writeup is available on my blog here: https://vvrrao.home.blog/hosting-a-custom-nlp-model-on-aws-elastic-kubernetes-service/
 
 Trained a model locally and deployed  to the Elastic Kubernetes Service on AWS. The data was from Kaggle: https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/overview.
 This is a Sentiment Dataset for Movie reviews. Five Sentiment Labels as follows:
