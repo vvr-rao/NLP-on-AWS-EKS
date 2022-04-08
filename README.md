@@ -24,7 +24,7 @@ Beyond a certain point, my learning rate began to stagnate (see below) and I beg
 ![Learning Curve SVM](https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/Other_Ref/Learning_curve.png?raw=true)
 
 ## Onward to more complex models
-I was able to get a slightly higher accuracy using BERT (bert-sentiment-model-71pct-accuracy.ipynb). I used the bert-base-cased model and trained the model on Kaggle using the Kaggle provided GPUs. Sensitivity varied between 0.55 - 0.79 based on the class and the model was better at prdicting neutral sentiment (79% accuracy) It gets confused between the degrees of Positivity and Negativity (Somewhat Positive vs Positive)
+I was able to get a slightly higher accuracy using BERT (bert-sentiment-model-71pct-accuracy.ipynb). I used the bert-base-cased model and trained the model on Kaggle using the Kaggle provided GPUs. Sensitivity varied between 0.55 - 0.79 based on the class and the model was better at prdicting neutral sentiment (79% accuracy) Again, it gets confused between the degrees of Positivity and Negativity (Somewhat Positive vs Positive)
 
 Another approach I am exploring to improve the model is to create Word2Vec vectors and training a model using that (ref: NLPonEKS-EDA-Word2Vec.ipynb). Unfortunately, the dataset might not be large enough for sufficient W2V training and my accuracy is proving to be lower than a simple BOW with CountVectorization and SVM. (I also downloaded and tested the pretrained GoogleNews-vectors-negative300 model - ref: Download_and_Test_Google_Pretrained_W2V_model.ipynb - but had somewhat disappointing results when testing for distances between word pairs like happy-sad. Going to try a few more pre-trained models for word embeddings. )
 
