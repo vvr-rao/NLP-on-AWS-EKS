@@ -16,9 +16,9 @@ The Notebooks folder has the EDA and Model training. For EDA, I primarily focuss
 The modeling needs a bit more work(ref: NLPonEKS-ModelTraining.ipynb). I did notice that modifying the classes to just Positive-Negative-Neutral made the model much better and I could get and accuracy of 74.4% and the below F1 scores with TFIDF and LinearSVC. Here is the Notebook for that: (https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/Other_Ref/TFIDF-with-LinearSVC.ipynb)
                         
                         precision    recall  f1-score   support
-           Negative      0.75      0.64      0.69      6943
-           Neutral       0.73      0.82      0.77     15639
-           Positive      0.78      0.69      0.74      8630
+           Negative      0.75         0.64      0.69      6943
+           Neutral       0.73         0.82      0.77     15639
+           Positive      0.78         0.69      0.74      8630
            
 Beyond a certain point, my learning rate began to stagnate (see below) and I began to look at better modeling tools like Transformers
 ![Learning Curve SVM](https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/Other_Ref/Learning_curve.png?raw=true)
