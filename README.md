@@ -13,7 +13,7 @@ This is a Sentiment Dataset for Movie reviews. Five Sentiment Labels as follows:
 The Notebooks folder has the EDA and Model training. For EDA, I primarily focussed on using the **en_core_web_lg model** of Spacy to extract Named Entities, Adjectives and Verbs. Was looking for any trends. Below is an Example of the Persons in the corpus arranged by Sentiment Label
 ![Persons by Sentiment](https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/Persons.png?raw=true)
 
-The modeling needs a bit more work(ref: NLPonEKS-ModelTraining.ipynb). I did notice that modifying the classes to just Positive-Negative-Neutral made the model much better and I could get and accuracy of 74.4% and the nelow F1 scores with TDIDF and LinearSVC. Here is the Notebook for that: (https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/Other_Ref/TFIDF-with-LinearSVC.ipynb)
+The modeling needs a bit more work(ref: NLPonEKS-ModelTraining.ipynb). I did notice that modifying the classes to just Positive-Negative-Neutral made the model much better and I could get and accuracy of 74.4% and the below F1 scores with TFIDF and LinearSVC. Here is the Notebook for that: (https://github.com/vvr-rao/NLP-on-AWS-EKS/blob/main/Notebooks/Other_Ref/TFIDF-with-LinearSVC.ipynb)
                         precision    recall  f1-score   support
 
            Negative      0.75      0.64      0.69      6943
